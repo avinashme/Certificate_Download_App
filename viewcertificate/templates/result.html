@@ -1,9 +1,18 @@
+{% load staticfiles %}
 <html>
-
-<h1>Welcome </h1>
-<ul>
-    <li>Bib No : {{context.db_bibno}} </li>
-    <li>Name : {{context.db_name}} </li>
-    <li>Mobile : {{context.db_mobileno}} </li>
-</ul>
+    <head>
+        <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+        <link href="{% static 'css/result.css' %}" rel="stylesheet" type="text/css">
+        <!--<link rel="stylesheet" href="{% static 'https://fonts.googleapis.com/css?family=Pacifico&display=swap' %}">-->
+    </head>
+    <body bgcolor="8236FC" >
+        <div class="centered">
+            <img src="{% static 'certificate.png' %}" alt="Snow" style="width:100%;">
+                <h1 class="centered h1">
+                    {{context.db_name}} <br/>
+                    {{context.db_mobileno}} <br/>
+                </h1>
+        </div>
+    </body>
 </html>

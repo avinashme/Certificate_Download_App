@@ -1,5 +1,4 @@
 {% load staticfiles %}
-
 <html lang="en">
 <head>
 	<title>Login</title>
@@ -29,34 +28,25 @@
 <!--===============================================================================================-->
 </head>
 <body>
-
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-b-160 p-t-50">
 				<form class="login100-form validate-form" method="POST" action="result/">
 					{% csrf_token %}
-					<span class="login100-form-title p-b-43">
-						Account Login
-					</span>
 
 					<div class="wrap-input100 rs1 validate-input" data-validate = "BIB no is required">
 						<input class="input100" type="text" name="bibno">
 						<span class="label-input100">BIB No</span>
 					</div>
-
-
 					<div class="wrap-input100 rs2 validate-input" data-validate="Mobile no is required">
 						<input class="input100" type="text" name="mobileno">
 						<span class="label-input100">Mobile No</span>
 					</div>
-
-
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
 							View Certificate
 						</button>
 					</div>
-
 				</form>
 			</div>
 		</div>
